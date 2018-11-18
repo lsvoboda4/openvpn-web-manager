@@ -1,0 +1,18 @@
+# You don't have to use this
+# file. I you use this file,
+# you can add users to download
+# .ovpn files (not only admin)
+
+AuthType Basic
+
+# Replace text with whatever
+# you want
+
+AuthName "Download VPN config file"
+
+# Change this path with path
+# of .htpasswd file placed
+# in the ovpns directory
+
+AuthUserFile /var/www/html/ovpns/.htpasswd
+Require valid-user

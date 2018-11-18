@@ -1,0 +1,17 @@
+# This is htaccess file. If you want to use it, 
+# rename it to .htaccess and place it to 
+# directory which you want to authenticate
+
+AuthType Basic
+
+# You can replace this "Enter password" with 
+# whatever you want
+
+AuthName "Enter password"
+
+# Replace this path with your ABSOLUTE path to 
+# your .htpasswd file
+
+AuthUserFile /var/www/html/.htpasswd
+
+Require valid-user
